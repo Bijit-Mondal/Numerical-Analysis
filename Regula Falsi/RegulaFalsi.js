@@ -1,6 +1,6 @@
 //Regula Falsi Method to find the root of x*x*x-2*x-5=0 Program in JavaScript
 let E = 0.0001;
-const fn = (x) => x * x * x - 2 * x - 5;
+const fn = (x) => 3 * x * x  + 6 * x - 45;
 const regulaFalsi = (a, b) => {
     let c = a;
     while (Math.abs(fn(c)) >= E) {
@@ -12,6 +12,6 @@ const regulaFalsi = (a, b) => {
     console.log(`The value of root is : ${c}`);
 }
 let a = 2;
-let b = 3;
+let b = 4;
 regulaFalsi(a, b);
 
